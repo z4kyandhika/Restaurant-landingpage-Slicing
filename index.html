@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar section -->
+    <nav class="navbar pt-3 pb-2">
+      <div class="container-fluid text-center">
+        <div class="container-fluid mx-3 text-center">
+          <div class="row">
+            <!-- Navigation Bar  -->
+            <div class="col">
+              <ul class="d-flex gap-3 mt-3">
+                <li class="nav-item styled">
+                  <!-- (Styled) Custom component main.scss folder -->
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown styled">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item styled">
+                  <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item styled">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Logo organizer  -->
+            <div class="col middle-logo-brand d-flex justify-content-center align-items-center gap-1">
+              <img src="./src/assets/logo/Home.svg" alt="Home-logo" height="44" />
+              <h3 class="fw-bold mt-2" style="font-family: 'Nunito'">Resto</h3>
+            </div>
+
+            <!-- Input layout -->
+            <form class="col d-flex p-2 gap-3" role="search">
+              <div class="input-group pe-1">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </span>
+                <input type="text" class="form-control" placeholder="Search your favourite food" aria-label="Username" aria-describedby="basic-addon1" />
+              </div>
+              <button class="btn fw-bold btn-purp text-secondary-color px-3" type="submit" style="width: 6.8em">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header / Image  -->
+    <header class="d-flex justify-content-end pt-3 mb-5 position-relative">
+      <!-- Card option  -->
+      <div class="card card-styled" style="width: 20rem">
+        <div class="card-body">
+          <span class="d-flex align-items-center justify-content-around mb-1" style="width: 60%">
+            <img src="./src/assets/icons/star-fill.svg" alt="stars" />
+            <img src="./src/assets/icons/star-fill.svg" alt="stars" />
+            <img src="./src/assets/icons/star-fill.svg" alt="stars" />
+            <img src="./src/assets/icons/star-fill.svg" alt="stars" />
+            <img src="./src/assets/icons/star-fill.svg" alt="stars" />
+            <span class="ratings-edit text-muted pt-1">(5.2K+)</span>
+          </span>
+          <div class="d-flex flex-column mb-4">
+            <h5 class="card-title">Padang Restaurant</h5>
+            <h6 class="card-subtitle text-muted mb-2">IDR 49.999 - IDR 560.000</h6>
+            <h6 class="card-subtitle text-muted fw-thin d-flex gap-1">
+              <img src="./src/assets/icons/location-icon.svg" alt="" />
+              Padang, Indonesia
+            </h6>
+          </div>
+          <button type="button" class="btn btn-main-color btn-lg pe-3 mb-2">
+            <span class="fw-bold fs-6">Make Reservation <span class="d-inline-block ps-2 fw-normal"> > </span></span>
+          </button>
+          <h6 class="text-muted content pt-1"><span class="d-inline-block styled-info"> i </span> No extra cost</h6>
+        </div>
+      </div>
+
+      <!-- image on header section  -->
+
+      <!-- large image  -->
+      <div>
+        <img class="pe-4" src="./src/assets/image/Mask group.svg" height="500px" alt="" />
+      </div>
+
+      <!-- mini image  -->
+      <div class="flex-shrink-1">
+        <img src="./src/assets/image/Mask group (1).svg" height="500px" alt="" />
+      </div>
+    </header>
+
+    <!-- Container organizer in second section -->
+    <section class="container pt-3" style="margin-top: 120px; padding-bottom: 30px">
+      <!-- Text layouting  -->
+      <div class="row text-center">
+        <div class="col pb-5">
+          <span class="text-secondary-color fw-bold">SPECIAL BENEFIT FOR YOU</span>
+          <h2 class="fw-bold">Why Should Choose Us?</h2>
+        </div>
+      </div>
+
+      <!-- Inner grid -->
+      <div class="row text-center gap-3 mt-4">
+        <!-- Card & Col #1  -->
+        <div class="d-flex col card position-relative card-width">
+          <div class="background-icon-organizer mx-auto">
+            <img class="" src="./src/assets/icons/Discount.svg" height="40px" alt="" />
+          </div>
+          <div class="card-text-position position-relative mx-2 pt-4 mt-4">
+            <span class="d-block fw-bold fs-6 pb-2">Extra Discounts</span>
+            <span class="text-muted fs-7">Get your special discount by using our reservation</span>
+          </div>
+          <button class="btn shapes-organizer"><span class="fw-bold">View Details > </span></button>
+        </div>
+
+        <!-- Card & Col #2  -->
+        <div class="d-flex col card position-relative card-width">
+          <div class="background-icon-organizer mx-auto">
+            <img class="" src="./src/assets/icons/fork.svg" height="40px" alt="" />
+          </div>
+          <div class="card-text-position position-relative mx-2 pt-4 mt-4">
+            <span class="d-block fw-bold fs-6 pb-2">Come and Eat</span>
+            <span class="text-muted fs-7">Get your own table quickly & without waiting in line</span>
+          </div>
+          <button class="btn shapes-organizer"><span class="fw-bold">View Details > </span></button>
+        </div>
+
+        <!-- Card & Col #3 -->
+        <div class="d-flex col card position-relative card-width">
+          <div class="background-icon-organizer mx-auto">
+            <img class="" src="./src/assets/icons/dollar-bag.svg" height="40px" alt="" />
+          </div>
+          <div class="card-text-position position-relative mx-2 pt-4 mt-4">
+            <span class="d-block fw-bold fs-6 pb-2">No Extra Fee</span>
+            <span class="text-muted fs-7">Get tax free if you want to order food and make a reservation </span>
+          </div>
+          <button class="btn btn-white shapes-organizer"><span class="fw-bold">View Details > </span></button>
+        </div>
+
+        <!-- Card & Col #4 -->
+        <div class="d-flex col card position-relative card-width">
+          <div class="background-icon-organizer mx-auto">
+            <img class="" src="./src/assets/icons/particle.svg" height="40px" alt="" />
+          </div>
+          <div class="card-text-position position-relative mx-2 pt-4 mt-4">
+            <span class="d-block fw-bold fs-6 pb-2">Guaranteed Cleanliness</span>
+            <span class="text-muted fs-7">We ensure the cleanliness of the place as well as the food</span>
+          </div>
+          <button class="btn btn-white shapes-organizer"><span class="fw-bold">View Details > </span></button>
+        </div>
+
+        <!-- Button in here im Customize in main.sccs names : .shapes-organizer -->
+      </div>
+    </section>
+
+    <section class="container-fluid px-5 pt-3" style="margin-top: 120px; height: 80vh">
+      <!-- Grid container  -->
+      <div class="row text-start gap-3 px-3 h-100">
+        <div class="col-5 align-self-center ps-0 pe-5 d-flex flex-column gap-2">
+          <span class="text-secondary-color fw-bold">TOP 3 FEATURED RESTAURANT</span>
+          <h2 class="fw-bold">Most Popular Restaurant</h2>
+          <span class="d-block text-muted fs-6 pb-4 pe-5">The best restaurant in our opinion is how much customers like it in terms of place, price, comfort and of course the taste of the food itself.</span>
+          <button type="button" class="btn btn-main-color btn-lg pe-4 ms-2" style="width: 56%">
+            <span class="fw-bold fs-6">View All Restaurant <span class="d-inline-block ps-2 fw-normal"> > </span></span>
+          </button>
+        </div>
+
+        <div class="col-4 card img-featured img-1 my-3 pb-2 d-flex justify-content-end">
+          <div class="card mx-2 mb-2">
+            <!-- Card info & Component  -->
+            <div class="card-body position-relative d-flex justify-content-between">
+              <div class="texting">
+                <div class="d-flex gap-1 mb-1">
+                  <img src="./src/assets/icons/star-fill.svg" alt="" />
+                  <span class="text-rating fw-bold justify-self-center">5.0</span>
+                  <span class="text-muted">(7.2K+)</span>
+                </div>
+                <h5 class="card-title">Bind Balorant</h5>
+                <div class="d-flex gap-1">
+                  <img src="./src/assets/icons/location-icon.svg" alt="" />
+                  <span class="text-muted">Jakarta, Indonesia</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-main-color align-self-center">
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col card img-featured img-2 my-3"></div>
+        <div class="col card img-featured img-3 my-3"></div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-5 pt-3" style="margin: 120px auto">
+      <div class="d-flex justify-content-between">
+        <div class="col-5 align-self-center ps-0 pe-5 d-flex flex-column gap-2">
+          <span class="text-secondary-color fw-bold">RESTAURANT BASED BY CITY</span>
+          <h2 class="fw-bold">Restaurant Near You</h2>
+        </div>
+        <div class="px-2 pt-4">
+          <button class="btn ps-4 px-3 py-2" style="background-color: rgba(113, 113, 113, 0.1)">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="gray" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+              </svg>
+            </span>
+            <span class="text-secondary ratings-edit ps-1">Jakarta, Indonesia </span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.165 9.72627C15.455 9.42627 15.925 9.42627 16.225 9.71627C16.375 9.86627 16.445 10.0563 16.445 10.2563C16.445 10.4463 16.375 10.6363 16.225 10.7763L12.755 14.2663C12.615 14.4063 12.425 14.4863 12.225 14.4863C12.025 14.4863 11.835 14.4063 11.695 14.2663L8.225 10.7763C7.925 10.4863 7.925 10.0163 8.225 9.71627C8.515 9.42627 8.995 9.42627 9.285 9.72627L12.225 12.6763L15.165 9.72627Z"
+                fill="#656565"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="row gx-4 mt-4">
+        <div class="col">
+          <div class="card">
+            <img src="./src/assets/image/Mask group (3).svg" class="card-img" alt="..." />
+            <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-body bg-white position-relative d-flex justify-content-between" style="border-radius: 26px">
+                <div class="texting">
+                  <div class="d-flex gap-1 mb-1">
+                    <img src="./src/assets/icons/star-fill.svg" alt="" />
+                    <span class="text-rating fw-bold justify-self-center">5.0</span>
+                    <span class="text-muted">(6.6K+)</span>
+                  </div>
+                  <h6 class="card-title mb-2 fw-bold">Batavia Restaurant</h6>
+                  <h6 class="card-subtitle text-muted mb-2 mt-1 fw-bold">IDR 29.000 - IDR 259.999</h6>
+                </div>
+                <a href="#" class="btn btn-main-color align-self-center">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="./src/assets/image/Mask group (4).svg" class="card-img" alt="..." />
+            <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-body bg-white position-relative d-flex justify-content-between" style="border-radius: 26px">
+                <div class="texting">
+                  <div class="d-flex gap-1 mb-1">
+                    <img src="./src/assets/icons/star-fill.svg" alt="" />
+                    <span class="text-rating fw-bold justify-self-center">5.0</span>
+                    <span class="text-muted">(3.6K+)</span>
+                  </div>
+                  <h6 class="card-title mb-2 fw-bold">Split Ascent Restaurant</h6>
+                  <h6 class="card-subtitle text-muted mb-2 mt-1 fw-bold">IDR 49.999 - IDR 560.000</h6>
+                </div>
+                <a href="#" class="btn btn-main-color align-self-center">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="./src/assets/image/Mask group (5).svg" class="card-img" alt="..." />
+            <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-body bg-white position-relative d-flex justify-content-between" style="border-radius: 26px">
+                <div class="texting">
+                  <div class="d-flex gap-1 mb-1">
+                    <img src="./src/assets/icons/star-fill.svg" alt="" />
+                    <span class="text-rating fw-bold justify-self-center">5.0</span>
+                    <span class="text-muted">(11K+)</span>
+                  </div>
+                  <h6 class="card-title mb-2 fw-bold">Daza Fracture Restaurant</h6>
+                  <h6 class="card-subtitle text-muted mb-2 mt-1 fw-bold">IDR 29.999 - IDR 560.000</h6>
+                </div>
+                <a href="#" class="btn btn-main-color align-self-center">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <button type="button" class="btn btn-main-color btn-lg pe-4 ms-2">
+          <span class="fw-bold fs-6">View All Restaurant <span class="d-inline-block ps-2 fw-normal"> > </span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container-fluid px-5 pt-3" style="margin: 120px auto">
+      <div class="row ps-4 g-5">
+        <div class="col position-relative ps-5">
+          <div class="card position-absolute end-0 px-3 pt-1 pb-2" style="z-index: 1; top: 30px">
+            <div class="card-body">
+              <div class="background-icon-footer mx-auto">
+                <img class="" src="./src/assets/icons/Shield Done.svg" height="40px" alt="" />
+              </div>
+
+              <div class="d-flex mt-2 flex-column">
+                <h6 class="card-title fw-bold text-center pt-1">12 Years</h6>
+                <span class="text-muted text-center">Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./src/assets/image/Mask group (7).svg" class="card-img" alt="..." />
+          </div>
+
+          <div class="card position-absolute start-0 p-2" style="top: 73%">
+            <div class="card-body d-flex gap-2 px-2 py-3">
+              <img src="./src/assets/image/Mask group (8).svg" alt="" />
+              <div class="d-flex flex-column ps-1 pe-3 mt-4">
+                <h6 class="text-muted">Chef at Restaurant:</h6>
+                <h6 class="fw-bold pb-1">Pearl Dolphin</h6>
+                <a href="#" class="text-rating pt-2" style="text-decoration: none;">View Details > </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-column gap-2">
+            <span class="text-secondary-color fw-bold">TOP 4 EXPERT CHEF</span>
+            <h2 class="fw-bold">Expert Chef In Fuddy</h2>
+          </div>
+
+          <div class="d-flex flex-column gap-4 mt-5 mb-5">
+            <div class="card p-2" id="card-footer">
+              <div class="card-body position-relative">
+                <h6 class="text-muted fw-bold">PIZZA</h6>
+                <span class="text-rating float-end fs-7 move" id="text-motion">View Details > </span>
+                <h5 class="">Phoenix Satcheup</h5>
+                <div class="d-flex gap-1">
+                  <img src="./src/assets/icons/location-icon.svg" alt="" />
+                  <span class="text-muted">Jakarta, Indonesia</span>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2" id="card-footer">
+              <div class="card-body position-relative">
+                <h6 class="text-muted fw-bold">VEGAN</h6>
+                <span class="text-rating float-end fs-7 move">View Details > </span>
+                <h5 class="">Chamber Botfrog</h5>
+                <div class="d-flex gap-1">
+                  <img src="./src/assets/icons/location-icon.svg" alt="" />
+                  <span class="text-muted">Bandung, Indonesia</span>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2" id="card-footer">
+              <div class="card-body position-relative">
+                <h6 class="text-muted fw-bold">ROAST CHIKEN</h6>
+                <span class="text-rating float-end fs-7 move">View Details > </span>
+                <h5 class="">Asep Vandal</h5>
+                <div class="d-flex gap-1">
+                  <img src="./src/assets/icons/location-icon.svg" alt="" />
+                  <span class="text-muted">Sunda, Indonesia</span>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2" id="card-footer">
+              <div class="card-body position-relative">
+                <h6 class="text-muted fw-bold">BEEF STEAK</h6>
+                <span class="text-rating float-end fs-7 move">View Details > </span>
+                <h5 class="">I Made Invoker</h5>
+                <div class="d-flex gap-1">
+                  <img src="./src/assets/icons/location-icon.svg" alt="" />
+                  <span class="text-muted">Bali, Indonesia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-main-color ms-3 px-4 fw-bold py-2">View all Chef ></button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
